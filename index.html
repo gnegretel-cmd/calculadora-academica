@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Académica Inteligente</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Calculadora Académica Inteligente</h1>
+
+        <p class="descripcion">
+            Calcula tu rendimiento académico y descubre qué notas necesitas para aprobar.
+        </p>
+
+        <!-- UNIDAD 1 -->
+        <div class="bloque">
+
+            <h2>Unidad 1</h2>
+
+            <input type="number" id="u1i" placeholder="Protocolo Individual" min="0" max="5" step="0.1">
+
+            <input type="number" id="u1c" placeholder="Protocolo Colaborativo" min="0" max="5" step="0.1">
+
+            <input type="number" id="u1a" placeholder="Actividad de la Unidad" min="0" max="5" step="0.1">
+
+            <input type="number" id="u1e" placeholder="Evaluación de la Unidad" min="0" max="5" step="0.1">
+
+        </div>
+
+        <!-- UNIDAD 2 -->
+        <div class="bloque">
+
+            <h2>Unidad 2</h2>
+
+            <input type="number" id="u2i" placeholder="Protocolo Individual" min="0" max="5" step="0.1">
+
+            <input type="number" id="u2c" placeholder="Protocolo Colaborativo" min="0" max="5" step="0.1">
+
+            <input type="number" id="u2a" placeholder="Actividad de la Unidad" min="0" max="5" step="0.1">
+
+            <input type="number" id="u2e" placeholder="Evaluación de la Unidad" min="0" max="5" step="0.1">
+
+        </div>
+
+        <!-- UNIDAD 3 -->
+        <div class="bloque">
+
+            <h2>Unidad 3</h2>
+
+            <input type="number" id="u3i" placeholder="Protocolo Individual" min="0" max="5" step="0.1">
+
+            <input type="number" id="u3c" placeholder="Protocolo Colaborativo" min="0" max="5" step="0.1">
+
+            <input type="number" id="u3a" placeholder="Actividad de la Unidad" min="0" max="5" step="0.1">
+
+            <input type="number" id="u3e" placeholder="Evaluación de la Unidad" min="0" max="5" step="0.1">
+
+        </div>
+
+        <!-- UNIDAD 4 -->
+        <div class="bloque">
+
+            <h2>Unidad 4</h2>
+
+            <input type="number" id="u4i" placeholder="Protocolo Individual" min="0" max="5" step="0.1">
+
+            <input type="number" id="u4c" placeholder="Protocolo Colaborativo" min="0" max="5" step="0.1">
+
+            <input type="number" id="u4a" placeholder="Actividad de la Unidad" min="0" max="5" step="0.1">
+
+            <input type="number" id="u4e" placeholder="Evaluación de la Unidad" min="0" max="5" step="0.1">
+
+        </div>
+
+        <!-- TCC -->
+        <div class="bloque">
+
+            <h2>TCC</h2>
+
+            <input type="number" id="documento" placeholder="Documento TCC" min="0" max="5" step="0.1">
+
+            <input type="number" id="sustentacion" placeholder="Sustentación TCC" min="0" max="5" step="0.1">
+
+        </div>
+
+        <!-- PARCIAL -->
+        <div class="bloque">
+
+            <h2>Parcial Final</h2>
+
+            <input type="number" id="parcial" placeholder="Parcial Final" min="0" max="5" step="0.1">
+
+        </div>
+
+        <button onclick="calcularNota()">
+            Calcular Rendimiento
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
